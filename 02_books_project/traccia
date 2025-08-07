@@ -1,0 +1,65 @@
+📘 Esercitazione Classi e Oggetti 0.0.1
+
+Realizzare la classe Libro, i cui oggetti sono caratterizzati da:
+- Titolo
+- Autori (formato stringa: “nome cognome”)
+- Prezzo
+
+---
+
+🔧 Funzionalità dei metodi:
+
+• Conoscere il prezzo del libro
+
+• Conoscere il titolo del libro
+
+• Conoscere gli autori del libro
+(per un solo libro ci possono essere più autori. Ordinare gli autori per ordine alfabetico)
+
+• Aggiungere un autore al libro
+(controllando la presenza di duplicati; se già presente o se si è raggiunto il limite massimo di 5 autori, stampa un messaggio di avviso)
+
+• Rimuovere un autore dal libro
+(se l’autore da rimuovere non è presente non fa nulla, altrimenti lo rimuove e ripristina l’ordine degli autori rimanenti)
+
+• Sapere se un autore è presente tra gli autori
+
+• Sapere se ha i medesimi autori di un altro libro
+
+Restituire le informazioni del libro con la seguente formattazione:
+Mario Rossi, Maria Bianchi, Programmazione II, €10,40
+
+---
+
+🛠 Modalità per creare un oggetto Libro:
+
+1️⃣ Con titolo e prezzo soltanto (senza autori):
+In questo caso, il libro può contenere fino a un massimo di 5 autori, che potranno essere aggiunti successivamente con il metodo aggiungiAutore().
+
+2️⃣ Con titolo, prezzo e un elenco di autori già specificato:
+In questo caso, il numero massimo di autori è fissato al numero N di autori forniti in fase di costruzione.
+Non sarà possibile aggiungere altri autori oltre quei N, nemmeno se ce ne sono meno di 5.
+
+---
+
+🧩 Facoltativo:
+
+Realizzare la seconda parte dell’esercizio dopo aver completato la prima.
+
+Creare la classe Libreria nella stessa cartella della classe Libro, contenente il metodo main, che effettua le seguenti operazioni:
+
+• Crea una lista di 100 libri
+• Inizializza una lista di 10 autori
+• Inizializza una lista di 100 libri
+
+Ogni libro è creato nel seguente modo:
+– Con probabilità del 10%, crea un libro con solamente titolo e prezzo
+– Con probabilità del 90%, crea un libro con titolo, prezzo e autori
+
+Gli autori sono scelti estraendo a caso 3 autori dalla lista. Se viene estratto due volte lo stesso autore, il libro avrà meno di 3 autori.
+
+Il titolo del libro è assegnato nel seguente modo:
+Libro0 per il primo libro, Libro1 per il secondo libro, ecc.
+Il prezzo è un numero casuale tra 0€ e 20€ (inclusi i centesimi).
+
+• Stampare il numero di volte in cui due libri sono scritti dagli stessi autori, escludendo i casi in cui ci sono 0 autori.dart-fundamentals
